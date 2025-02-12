@@ -1,0 +1,95 @@
+@media (max-width: 480px) {
+  .basicBox {
+    background-color: transparent;
+    scale: 0.7;
+    width: 122vw;
+    margin-left: -61vw;
+    display: grid; }
+
+  body {
+    background-color: darkslategrey;
+    width: 48rem;
+    height: 200rem;
+    transform: translate(0rem, -60rem); }
+
+  .basicBox .sectionBox .article {
+    width: 51rem; }
+
+  .article {
+    width: 51rem; }
+
+  .basicBox .resultButtonA {
+    position: unset; }
+
+  .basicBox .resultButtonB {
+    position: unset; }
+
+  .basicBox .resultButtonC {
+    position: unset; }
+
+  .basicBox .sectionBox .article {
+    position: unset;
+    margin-left: unset; }
+
+  .headerText {
+    width: 56rem;
+    transform: translate(0px, -13rem); }
+
+  .basicBox .sectionBox {
+    transform: translate(0px, -13rem); }
+
+  .sectionBox {
+    display: flex;
+    justify-self: center; }
+
+  .modalAlert {
+    margin-top: -28vw !important;
+    margin-left: -46vw !important;
+    line-height: 14vw !important; }
+
+  .box3 {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: space-around; } }
+@media (max-width: 390px) {
+  body {
+    width: 390px; }
+
+  .basicBox .headerText .calculatorTitle {
+    font-size: 5rem; }
+
+  .headerText {
+    width: 56rem;
+    transform: translate(-3rem, -11rem); }
+
+  .box {
+    transform: translate(-6rem, 1rem); }
+
+  .basicBox .sectionBox {
+    transform: translate(-4rem, -13rem);
+    width: 38rem; }
+
+  .basicBox .sectionBox .article {
+    width: 38rem; } }
+@media (max-width: 375px) {
+  body {
+    width: 375px; }
+
+  .basicBox .headerText .calculatorTitle {
+    font-size: 5rem; }
+
+  .headerText {
+    transform: translate(-6rem, -13rem);
+    width: 55rem; }
+
+  .basicBox .sectionBox {
+    width: 38rem;
+    transform: translate(-6rem, -13rem); }
+
+  .basicBox .sectionBox .article {
+    width: 38rem; }
+
+  .box {
+    transform: translate(-5rem, 1rem); } }
+
+/*# sourceMappingURL=matrixMobile.css.map */

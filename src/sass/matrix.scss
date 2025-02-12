@@ -1,0 +1,300 @@
+$main-color : lightseagreen;
+$border-color: #84c1ea;
+$background-color: darkslategrey;
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+
+body {
+    background-color: $main-color;
+}
+
+.basicBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 152rem;
+    height: 90rem;
+    margin-top: -45rem;
+    margin-left: -76rem;
+    background-color: $background-color;
+
+    .modalAlert {
+        position: absolute;
+        text-align: center;
+        display: none;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        margin-top: -14rem;
+        margin-left: -23rem;
+        line-height: 7rem;
+        z-index: 1000;
+        border-radius: 1rem;
+        font-size: 3rem;
+        width: 46rem;
+        height: 14rem;
+        background-color: lightslategrey;
+        font-family: 'Mukta', sans-serif;
+
+        .modalOff {
+            font-size: 4rem;
+        }
+
+        .modalOff:hover {
+            cursor: pointer;
+        }
+
+        .modalOff:active {
+            opacity: 0.8;
+        }
+    }
+
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+
+    input[type="number"] {
+        color: white;
+    }
+
+    .headerText {
+        height: 15rem;
+        line-height: 10rem;
+        text-align: center;
+        font-weight: 900;
+        color: $main-color;
+        text-shadow: 0.5rem 0.5rem #02392c;
+        font-family: 'Mukta', sans-serif;
+
+        .calculatorTitle {
+            font-size: 6rem;
+        }
+    }
+
+    .sectionBox {
+        height: 77.4rem;
+        position: relative;
+
+        .article {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -75rem;
+            width: 150rem;
+            height: 74.4rem;
+            background-color: transparent;
+
+            .box {
+                display: inline-block;
+                width: 50rem;
+                height: 74.4rem;
+                float: left;
+
+                .boxA {
+                    background-color: transparent;
+                    width: 50rem;
+                    height: 7rem;
+                    line-height: 6rem;
+                    position: relative;
+
+                    .matrixMenu {
+                        font-size: 3rem;
+                        font-weight: 900;
+                        color: $border-color;
+                        text-shadow: 0.3rem 0.3rem #02392c;
+                        position: absolute;
+                        left: 7rem;
+                        font-family: 'Mukta', sans-serif;
+                    }
+
+                    .matrixNumber {
+                        width: 5.5rem;
+                        height: 5.5rem;
+                        color: white;
+                    }
+
+                    .matrixNumberA {
+                        position: absolute;
+                        left: 24rem;
+                        top: 0px;
+                        border-radius: 1rem;
+                        border: none;
+                        font-size: 3rem;
+                        text-align: center;
+                        border: 0.5rem solid $border-color;
+                        background-color: transparent;
+                    }
+
+                    .matrixNumberB {
+                        position: absolute;
+                        left: 37rem;
+                        top: 0px;
+                        border-radius: 1rem;
+                        border: none;
+                        font-size: 3rem;
+                        text-align: center;
+                        border: 0.5rem solid $border-color;
+                        background-color: transparent;
+                    }
+
+                    .multiplication {
+                        font-size: 3rem;
+                        font-weight: 300;
+                        display: inline-block;
+                        position: absolute;
+                        left: 32rem;
+                        top: 1.5rem
+                    }
+                }
+
+                .boxA-A {
+                    background-color: transparent;
+                    width: 50rem;
+                    height: 14rem;
+                    line-height: 6rem;
+                    position: relative;
+                }
+            }
+
+            .boxB {
+                height: 7rem;
+                width: 50rem;
+                position: relative;
+
+                .buttonA {
+                    position: absolute;
+                    left: 6.5rem;
+                }
+
+                .buttonB {
+                    position: absolute;
+                    left: 19.5rem;
+                }
+
+                .buttonC {
+                    position: absolute;
+                    left: 32.5rem;
+                }
+
+                .button {
+                    height: 5.5rem;
+                    width: 11rem;
+                    font-size: 2.3rem;
+                    font-weight: 600;
+                    color: $main-color;
+                    background-color: transparent;
+                    border: 0.5rem solid $border-color;
+                    border-radius: 2rem;
+                    margin: 0 auto;
+                    margin-top: 1rem;
+                    font-family: 'Mukta', sans-serif;
+                    transition: background-color 0.2s;
+                }
+
+                .button:hover {
+                    cursor: pointer;
+                    background-color: #f2f2f2;
+                    color: pink;
+                }
+
+                .button:active {
+                    background-color: transparent;
+                }
+            }
+
+            .boxC {
+                width: 50rem;
+                height: 60.3rem;
+                background-color: transparent;
+
+                .matrixResultAllBox {
+                    width: 50rem;
+                    height: 5rem;
+                    display: flex;
+                    justify-content: center;
+                    background-color: transparent;
+                    margin-top: 0.5rem;
+                    top: 3rem;
+
+                    .matrixResultBox {
+                        width: 4rem;
+                        height: 4rem;
+                        border: 0.2rem solid black;
+                        margin-left: 0.5rem;
+                        background-color: transparent;
+                        border: 0.5rem solid $border-color;
+                        border-radius: 1rem;
+                        display: inline-block;
+                        text-align: center;
+                        font-size: 1.5rem;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .resultButtonA {
+        height: 14rem;
+        width: 11rem;
+        color: $main-color;
+        font-size: 4.5rem;
+        font-weight: 600;
+        background-color: transparent;
+        border-radius: 2rem;
+        border: 5px solid $border-color;
+        font-family: 'Mukta', sans-serif;
+        position: absolute;
+        top: 0px;
+        left: 107.5rem;
+    }
+
+    .resultButtonB {
+        height: 14rem;
+        width: 11rem;
+        color: $main-color;
+        font-size: 4.5rem;
+        font-weight: 600;
+        background-color: transparent;
+        border-radius: 2rem;
+        border: 0.5rem solid $border-color;
+        font-family: 'Mukta', sans-serif;
+        position: absolute;
+        top: 0px;
+        left: 119.5rem;
+    }
+
+    .resultButtonC {
+        height: 14rem;
+        width: 11rem;
+        color: $main-color;
+        font-size: 4.5rem;
+        font-weight: 600;
+        background-color: transparent;
+        border-radius: 2rem;
+        border: 0.5rem solid $border-color;
+        font-family: 'Mukta', sans-serif;
+        position: absolute;
+        top: 0px;
+        left: 131.5rem;
+    }
+
+    .resultButton {
+        transition: background-color 0.2s;
+    }
+
+    .resultButton:hover {
+        cursor: pointer;
+        background-color: #f2f2f2;
+        color: pink;
+    }
+
+    .resultButton:active {
+        background-color: transparent;
+    }
+}

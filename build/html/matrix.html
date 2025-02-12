@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8" />
+	<title>강광호의 행렬 계산기에 오신것을 환영합니다!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+	<link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+	<link rel="stylesheet" href="../css/matrix.css">
+	<link rel="stylesheet" href="../css/matrixMobile.css">
+</head>
+
+<body>
+
+	<body>
+		<div class="basicBox">
+			<div class="modalAlert"> 행과 열을 다시 확인해 주세요!
+				<div class="modalOff"> 확인 </div>
+			</div>
+			<header class="headerText">
+				<span class="calculatorTitle">MATRIX CALCULATOR</span>
+			</header>
+			<section class="sectionBox">
+				<div class="article">
+					<!--첫 번째-->
+					<div class="box">
+						<div class="boxA">
+							<span class="matrixMenu">MATRIX A</span>
+							<input type="text" id="rowsBoxNumberA" class="matrixNumber matrixNumberA" min="1" max="9"
+								maxlength="1">
+							<i class="xi-close-min multiplication"></i>
+							<input type="text" id="colsBoxNumberA" class="matrixNumber matrixNumberB" min="1" max="9"
+								maxlength="1">
+						</div>
+						<div class="boxB">
+							<input type="button" id="outputBoxA" class="button buttonA" value="OUTPUT">
+							<input type="button" id="randomBoxA" class="button buttonB" value="RANDOM">
+							<input type="button" id="resetBoxA" class="button buttonC" value="RESET">
+						</div>
+						<div id="boxC1" class="boxC"></div>
+					</div>
+					<!--두 번째-->
+					<div class="box">
+						<div class="boxA">
+							<span class="matrixMenu">MATRIX B</span>
+							<input type="text" id="rowsBoxNumberB" class="matrixNumber matrixNumberA" min="1" max="9"
+								maxlength="1">
+							<i class="xi-close-min multiplication"></i>
+							<input type="text" id="colsBoxNumberB" class="matrixNumber matrixNumberB" min="1" max="9"
+								maxlength="1">
+						</div>
+						<div class="boxB">
+							<input type="button" id="outputBoxB" class="button buttonA" value="OUTPUT">
+							<input type="button" id="randomBoxB" class="button buttonB" value="RANDOM">
+							<input type="button" id="resetBoxB" class="button buttonC" value="RESET">
+						</div>
+						<div id="boxC2" class="boxC"></div>
+					</div>
+					<!--세 번째-->
+					<div class="box box3">
+						<div class="boxA-A"></div>
+						<input type="button" id="resultButtonMultiplication" class="resultButtonA resultButton"
+							value="x">
+						<input type="button" id="resultButtonAddition" class="resultButtonB resultButton" value="+">
+						<input type="button" id="resultButtonSubtraction" class="resultButtonC resultButton" value="-">
+						<div id="boxC3" class="boxC"></div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<script src="../js/matrix.js"></script>
+	</body>
+
+</html>
